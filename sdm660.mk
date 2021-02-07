@@ -27,8 +27,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -188,10 +187,6 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     android.frameworks.displayservice@1.0 \
     vendor.display.config@1.1
-
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
 
 # DPM
 PRODUCT_PACKAGES += \
@@ -394,10 +389,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
